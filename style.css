@@ -1,0 +1,604 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f5f0; /* Um bege claro, remetendo a papel antigo ou adega clara */
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #4a1a1f; /* Um tom de vinho tinto escuro, bordô */
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin: 0;
+    color: #f0e6d2; /* Um creme suave para contraste */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #f0e6d2;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+    background-color: #722f37; /* Um tom de vinho um pouco mais claro */
+}
+
+header nav ul li a.active {
+    color: #fff; /* Ensure text is visible */
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero-bg.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+#hero::before { /* Overlay escuro para melhor legibilidade do texto */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative; /* Para ficar acima do overlay */
+    z-index: 1;
+}
+
+
+#hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #f0e6d2;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #a83c3c; /* Vermelho vinho mais vibrante */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #8c2d2d; /* Mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #722f37; /* Tom de vinho mais fechado */
+    color: #f0e6d2;
+    border: 1px solid #f0e6d2;
+}
+
+.btn-secondary:hover {
+    background-color: #f0e6d2;
+    color: #722f37;
+    transform: translateY(-2px);
+}
+
+/* How We Help Section */
+#how-we-help {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#how-we-help h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #4a1a1f;
+    margin-bottom: 15px;
+}
+.section-intro {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.help-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.help-item {
+    flex-basis: calc(33.333% - 20px);
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.help-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.help-item .help-icon {
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+
+.help-item h3 {
+    font-family: 'Playfair Display', serif;
+    color: #a83c3c;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.help-item p {
+    font-size: 0.95em;
+    color: #444;
+}
+.help-item a {
+    color: #a83c3c;
+    font-weight: bold;
+    text-decoration: none;
+}
+.help-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* Featured Wines Section */
+#featured-wines {
+    padding: 40px 0 60px;
+    background-color: #efebe5; /* Um tom levemente mais escuro que o body para contraste */
+}
+
+#featured-wines h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #4a1a1f;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.wine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    /* margin-bottom: 40px; -- Removed as individual grids might not need this directly */
+}
+
+div#all-wines-grid.wine-grid {
+    display: block; /* Override display:grid to allow normal flow of H3s and ULs */
+}
+
+.wine-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wine-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.wine-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain; /* Para não cortar a garrafa */
+    padding: 10px;
+    background-color: #fdfdfd; /* Fundo levemente diferente para a imagem */
+}
+
+.wine-card-content {
+    padding: 20px;
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+}
+
+.wine-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    color: #4a1a1f;
+    margin-bottom: 8px;
+}
+
+.wine-card .wine-type {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.wine-card .wine-description {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.wine-card .wine-price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #a83c3c;
+    margin-bottom: 15px;
+}
+
+.wine-card .btn {
+    width: 100%;
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Generic Page Content Styling */
+.page-content {
+    padding: 40px 20px; /* Added horizontal padding */
+    background-color: #fff; /* White background for content pages for clarity */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.page-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #4a1a1f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.page-content .section-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Vinhos Page - Categories */
+.wine-category {
+    margin-bottom: 50px;
+}
+
+.wine-category:last-of-type { /* Remove bottom margin from the last category */
+    margin-bottom: 20px;
+}
+
+.wine-category h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    color: #4a1a1f;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #efebe5;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.wine-category h3 .wine-emoji {
+    font-size: 1.1em; 
+    margin-right: 15px;
+    line-height: 1; /* Ensure emoji aligns well vertically */
+}
+
+/* Styling for the new static list on vinhos.html */
+#all-wines-grid h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    color: #4a1a1f;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #efebe5;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#all-wines-grid h3:first-of-type {
+    margin-top: 10px; /* Adjusted to give some space but not too much for the first one */
+}
+
+#all-wines-grid h3 .wine-emoji { /* Specific style for emojis in this new context */
+    font-size: 1.1em; 
+    margin-right: 15px;
+    line-height: 1;
+}
+
+#all-wines-grid ul {
+    list-style: none;
+    padding-left: 5px; /* Minor indent for the list itself */
+    margin-bottom: 30px;
+}
+
+#all-wines-grid li {
+    font-size: 1em;
+    color: #333; /* Standard text color for description */
+    padding: 12px 5px; /* Vertical padding and slight horizontal for items */
+    border-bottom: 1px solid #f0f0f0; /* Light separator */
+    line-height: 1.5;
+}
+
+#all-wines-grid li:last-child {
+    border-bottom: none; /* No separator for the last item in a list */
+}
+
+#all-wines-grid li strong {
+    color: #4a1a1f; /* Dark wine color for the name */
+    font-weight: 700; /* Montserrat bold */
+    display: block; /* Make strong take full width for better readability of name */
+    margin-bottom: 4px; /* Small space between name and description */
+}
+
+/* Guia de Harmonização Specifics */
+.harmonizacao-artigo {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fdfaf6; /* Slightly off-white for articles */
+    border-left: 4px solid #a83c3c; /* Accent color border */
+    border-radius: 0 4px 4px 0;
+}
+
+.harmonizacao-artigo h3 {
+    font-family: 'Playfair Display', serif;
+    color: #4a1a1f;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.harmonizacao-artigo p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Quiz Page Specifics */
+#quiz-container {
+    text-align: center;
+    padding: 30px;
+    min-height: 200px; /* Placeholder height */
+}
+#quiz-container p a {
+    color: #a83c3c;
+    font-weight: bold;
+    text-decoration: none;
+}
+#quiz-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Contato Page Specifics */
+.contato-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.contato-form h3, .contato-detalhes h3 {
+    font-family: 'Playfair Display', serif;
+    color: #4a1a1f;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contato-detalhes p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.contato-detalhes strong {
+    color: #4a1a1f;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .help-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .help-item {
+        flex-basis: 80%;
+        max-width: 450px;
+    }
+    .page-content { /* Ensure padding on smaller screens */
+        padding: 30px 15px;
+    }
+    .wine-category h3 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header nav ul li {
+        margin: 5px 10px;
+    }
+    #hero h2 {
+        font-size: 2.5em;
+    }
+    #hero p {
+        font-size: 1em;
+    }
+    .wine-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .contato-grid {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+    .page-content h2 {
+        font-size: 2em;
+    }
+    .harmonizacao-artigo h3 {
+        font-size: 1.5em;
+    }
+    .contato-form h3, .contato-detalhes h3 {
+        font-size: 1.5em;
+    }
+    .wine-category h3 {
+        font-size: 1.8em;
+    }
+    .wine-category h3 .wine-emoji {
+        font-size: 1em;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    header .logo img {
+        height: 40px;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    #hero h2 {
+        font-size: 2em;
+    }
+    #how-we-help h2, #featured-wines h2, .page-content h2 { /* Applied to new pages as well */
+        font-size: 2em;
+    }
+    .help-item {
+        flex-basis: 95%;
+    }
+    .harmonizacao-artigo h3 {
+        font-size: 1.3em;
+    }
+    .contato-form h3, .contato-detalhes h3 {
+        font-size: 1.3em;
+    }
+    .wine-category h3 {
+        font-size: 1.6em;
+    }
+}

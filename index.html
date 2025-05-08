@@ -1,0 +1,84 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinharia Agnello - Seu Vinho Ideal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Vinharia Agnello Logo">
+                <h1>Vinharia Agnello</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="vinhos.html">Nossos Vinhos</a></li>
+                    <li><a href="guia.html">Guia de Harmonização</a></li>
+                    <li><a href="quiz.html">Ajuda para Escolher</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Descubra o prazer em cada taça.</h2>
+            <p>Na Vinharia Agnello, ajudamos você a encontrar o vinho perfeito para cada momento, sem complicações.</p>
+            <a href="quiz.html" class="btn btn-primary">Encontre seu vinho ideal</a>
+        </div>
+    </section>
+
+    <section id="how-we-help" class="container">
+        <h2>Como Podemos Ajudar?</h2>
+        <p class="section-intro">Entendemos os desafios ao escolher um vinho. Veja como tornamos sua experiência mais fácil e prazerosa:</p>
+        <div class="help-items">
+            <div class="help-item">
+                <img src="icon-inseguranca.png" alt="Ícone Insegurança" class="help-icon">
+                <h3>Inseguro na Escolha?</h3>
+                <p>Nossas descrições detalhadas, notas de degustação e o <a href="quiz.html">Quiz Interativo</a> guiam você ao vinho certo para seu paladar e ocasião.</p>
+            </div>
+            <div class="help-item">
+                <img src="icon-conhecimento.png" alt="Ícone Conhecimento" class="help-icon">
+                <h3>Falta Conhecimento?</h3>
+                <p>Aprenda sobre uvas, regiões e harmonizações em nosso <a href="guia.html">Guia de Harmonização</a> e nas páginas de cada vinho. Informação clara e acessível.</p>
+            </div>
+            <div class="help-item">
+                <img src="icon-atendimento.png" alt="Ícone Atendimento" class="help-icon">
+                <h3>Atendimento Pessoal Online</h3>
+                <p>Sinta-se em nossa adega! Conte com recomendações e <a href="contato.html">fale com nossos especialistas</a> para um aconselhamento personalizado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-wines" class="container">
+        <h2>Vinhos em Destaque</h2>
+        <div class="wine-grid" id="featured-wines-grid">
+            <!-- Vinhos em destaque serão carregados aqui pelo script.js -->
+        </div>
+        <div class="text-center">
+            <a href="vinhos.html" class="btn btn-secondary">Ver Todos os Vinhos</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vinharia Agnello. Todos os direitos reservados.</p>
+            <p>Se beber, não dirija. Venda proibida para menores de 18 anos.</p>
+        </div>
+    </footer>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "products": "./products.js"
+      }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Vinharia Agnello</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Vinharia Agnello Logo">
+                <h1>Vinharia Agnello</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="vinhos.html">Nossos Vinhos</a></li>
+                    <li><a href="guia.html">Guia de Harmonização</a></li>
+                    <li><a href="quiz.html">Ajuda para Escolher</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h2>Entre em Contato Conosco</h2>
+        <p class="section-intro">Tem alguma dúvida, sugestão ou precisa de ajuda para escolher seu vinho? Nossa equipe de especialistas está pronta para atendê-lo!</p>
+
+        <div class="contato-grid">
+            <div class="contato-form">
+                <h3>Envie uma Mensagem</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Sua Mensagem:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+            <div class="contato-detalhes">
+                <h3>Nossos Contatos</h3>
+                <p><strong>Telefone:</strong> (XX) XXXXX-XXXX</p>
+                <p><strong>WhatsApp:</strong> (XX) XXXXX-XXXX</p>
+                <p><strong>E-mail:</strong> contato@vinhariaagnello.com.br</p>
+                <p><strong>Horário de Atendimento Online:</strong><br>
+                Segunda a Sexta: 9h às 18h<br>
+                Sábado: 9h às 13h</p>
+                
+                <h3 style="margin-top:30px;">Visite-nos (em breve)</h3>
+                <p>Estamos preparando nossa adega física para recebê-lo. Aguarde novidades!</p>
+                <p>Endereço: Rua dos Vinhedos, 123 - Cidade Vinícola - Estado</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vinharia Agnello. Todos os direitos reservados.</p>
+            <p>Se beber, não dirija. Venda proibida para menores de 18 anos.</p>
+        </div>
+    </footer>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "products": "./products.js"
+      }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

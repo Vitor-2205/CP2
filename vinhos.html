@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Vinhos - Vinharia Agnello</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Vinharia Agnello Logo">
+                <h1>Vinharia Agnello</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="vinhos.html" class="active">Nossos Vinhos</a></li>
+                    <li><a href="guia.html">Guia de Harmonização</a></li>
+                    <li><a href="quiz.html">Ajuda para Escolher</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h2>Nossa Seleção Completa de Vinhos</h2>
+        <p class="section-intro">Explore todos os vinhos que a Vinharia Agnello tem a oferecer. Encontre o rótulo perfeito para sua próxima ocasião especial ou para o dia a dia, incluindo rótulos da nossa curadoria especial.</p>
+        
+        <div class="wine-grid" id="all-wines-grid">
+            <h3><span class="wine-emoji">🍷</span> Vinhos Tintos</h3>
+            <ul>
+                <li><strong>Malbec - Catena Zapata (Argentina):</strong> Intenso, com notas de ameixa, tabaco e especiarias.</li>
+                <li><strong>Cabernet Sauvignon - Château Lafite Rothschild (França):</strong> Clássico de Bordeaux, elegante, com taninos firmes e notas de cassis.</li>
+                <li><strong>Syrah - Herdade do Esporão (Portugal):</strong> Aromático, com toque de frutas escuras e pimenta preta.</li>
+                <li><strong>Pinot Noir - Cono Sur Reserva Especial (Chile):</strong> Leve, frutado, com notas de cereja e terra úmida.</li>
+            </ul>
+
+            <h3><span class="wine-emoji">🥂</span> Vinhos Brancos</h3>
+            <ul>
+                <li><strong>Chardonnay - Cloudy Bay (Nova Zelândia):</strong> Fresco, com aromas de frutas tropicais e toque amanteigado.</li>
+                <li><strong>Sauvignon Blanc - Casa Valduga (Brasil):</strong> Cítrico, leve e refrescante, ótimo para dias quentes.</li>
+                <li><strong>Riesling - Dr. Loosen (Alemanha):</strong> Levemente doce, com alta acidez e notas florais.</li>
+                <li><strong>Albariño - Mar de Frades (Espanha):</strong> Mineral, com toques cítricos e de maçã verde.</li>
+            </ul>
+
+            <h3><span class="wine-emoji">🌸</span> Vinhos Rosé</h3>
+            <ul>
+                <li><strong>Whispering Angel - Côtes de Provence (França):</strong> Seco, leve, com notas de morango e pêssego.</li>
+                <li><strong>Mateus Rosé - Sogrape (Portugal):</strong> Suave, frutado, levemente frisante.</li>
+                <li><strong>Miolo Seleção Rosé (Brasil):</strong> Refrescante, com notas de frutas vermelhas e boa acidez.</li>
+                <li><strong>AIX Rosé (França):</strong> Elegante, com notas florais e frutas vermelhas frescas.</li>
+            </ul>
+
+            <h3><span class="wine-emoji">✨</span> Espumantes</h3>
+            <ul>
+                <li><strong>Champagne Moët & Chandon Brut Imperial (França):</strong> Clássico, com bolhas finas e notas de brioche e maçã.</li>
+                <li><strong>Cava Freixenet Cordon Negro Brut (Espanha):</strong> Seco, leve e refrescante, ótimo custo-benefício.</li>
+                <li><strong>Prosecco La Marca (Itália):</strong> Frutado, com notas de pera e maçã verde.</li>
+                <li><strong>Casa Perini Moscatel (Brasil):</strong> Doce e aromático, ideal para sobremesas.</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vinharia Agnello. Todos os direitos reservados.</p>
+            <p>Se beber, não dirija. Venda proibida para menores de 18 anos.</p>
+        </div>
+    </footer>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "products": "./products.js"
+      }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
